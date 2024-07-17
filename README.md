@@ -24,14 +24,25 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This a basic application that first take your consent to access your gmail. It can read your latest gmail and get Google's Gemini to generate a reply for you. I am going to add a new feature soon so that it can also draft you the mail and you can change values according to you and can send. Also I will be adding features to generate reply for any of your previous mails.
+
+##CODE RUNS ON PORT 8800
 
 ## Installation
 
 ```bash
 $ npm install
 ```
-
+## .env setup
+ get your own clientID and Client secret from google oauth project
+ setup your local redis url
+ get gemini api key, else get api key from groq
+ keys to setup:
+ 1. ClientId
+ 2. ClientSecret
+ 3. redisUrl
+ 4. gemini_api_key
+ 5. groq_api_key
 ## Running the app
 
 ```bash
@@ -58,16 +69,8 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - Anuj Kumar
+- Instagram - @biigfatpandaa 
 
-## License
-
-Nest is [MIT licensed](LICENSE).
